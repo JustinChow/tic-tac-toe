@@ -23,7 +23,48 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <div id="container">
+    <div data-row="0" data-col="0" class="tic-tac-toe-grid right-border" id="top-left"></div>
+    <div data-row="0" data-col="1" class="tic-tac-toe-grid right-border" id="top-center"></div>
+    <div data-row="0" data-col="2" class="tic-tac-toe-grid" id="top-right"></div>
+    <div data-row="1" data-col="0" class="tic-tac-toe-grid right-border top-border" id="middle-left"></div>
+    <div data-row="1" data-col="1" class="tic-tac-toe-grid right-border top-border" id="middle-center"></div>
+    <div data-row="1" data-col="2" class="tic-tac-toe-grid top-border" id="middle-right"></div>
+    <div data-row="2" data-col="0" class="tic-tac-toe-grid right-border top-border" id="bottom-left"></div>
+    <div data-row="2" data-col="1" class="tic-tac-toe-grid right-border top-border" id="bottom-center"></div>
+    <div data-row="2" data-col="2" class="tic-tac-toe-grid top-border" id="bottom-right"></div>
+  </div>
+
+  <div id="message-container"><p id="message">TEXT HERE</p></div>
+
+  <div id="input-container">
+    <form id="player-setup">
+      <h2>Player 1</h2>
+      <label for="p1-name">Name:</label>
+      <input type="text" id="p1-name" name="p1-name">
+      <fieldset>
+        <legend>Marker</legend>
+        <input type="radio" name="p1-marker" id="p1-x" value="X" checked>
+        <label for="p1-x">X</label>
+        <input type="radio" name="p1-marker" id="p1-0" value="O">
+        <label for="p1-o">O</label>      
+      </fieldset>
+      <h2> Player 2</h2>
+      <label for="p1Name">Name:</label>
+      <input type="text" id="p2-name" name="p2-name">
+      <fieldset>
+        <legend>Marker</legend>
+        <input type="radio" name="p2-marker" id="p2-x" value="X">
+        <label for="p2-x">X</label>
+        <input type="radio" name="p2-marker" id="p2-0" value="O" checked>
+        <label for="p2-o">O</label>      
+      </fieldset>
+
+      <input type="button" id="buttonStartGame" value="Start Game">
+    </form>
+  </div>
+
+
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>

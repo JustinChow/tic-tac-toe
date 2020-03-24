@@ -98,6 +98,49 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+#container {
+display: grid;
+margin: auto;
+width: 50%;
+grid-template-rows: repeat(3, 100px);
+grid-template-columns: repeat(3, 100px);
+justify-content: center;
+margin-top: 50px;
+}
+
+.tic-tac-toe-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 75px;
+}
+
+.right-border {
+border-right-style: solid;
+}
+
+.top-border {
+border-top-style: solid;
+}
+
+#input-container {
+margin-left: 50px;
+}
+
+form {
+display: block;
+}
+
+#message-container {
+  text-align: center;
+}
+
+#message {
+  font-size: 50px;
+  display: inline-block;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
